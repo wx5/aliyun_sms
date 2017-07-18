@@ -11,7 +11,7 @@ $LIB_PATH = 'aliyun_sdk/api_sdk/Dysmsapi/Request/V20170525/';
 include $CORE_PATH.'Config.php';
 include_once $LIB_PATH.'SendSmsRequest.php';    
 
-class AliSms {
+class Alisms {
     //短信API产品名
     protected $product = "Dysmsapi";
     //短信API产品域名
@@ -58,7 +58,11 @@ class AliSms {
         try{
             //发起访问请求
             $resp = $this->getClient()->getAcsResponse($request);
-            return $resp;        
+            return $resp;
+
+            // $test = new stdClass;
+            // $test->Code = 'OK';
+            // return $test;      
         }catch(\Exception $e) {
             return 'api错误: '.$e->getMessage();
         }        
