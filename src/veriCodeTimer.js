@@ -6,7 +6,7 @@
     + =tech=禁用 prop('disabled', 'disabled');
     + =tech=启用 removeAttr('disabled');
     + =tech=请求发送sms $.get(sms_url, callback);
-    + =tech=启动方法： vtimer.monitor(element, sms_url, callback);
+    + =tech=启动方法： veriCodeTimer.monitor(element, sms_url, callback);
 */ 
 
 var veriCodeTimer = {
